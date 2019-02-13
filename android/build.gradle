@@ -1,0 +1,37 @@
+buildscript {
+    repositories {
+       // maven { url "D:/m2repository" }
+       // mavenLocal()
+        maven { url "https://nexus.datys.cu/content/repositories/central/"}
+        mavenCentral()
+        jcenter()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.0'
+    }
+}
+
+allprojects {
+    repositories {
+       // maven { url "D:/m2repository" }
+       // mavenLocal()
+        maven { url "https://nexus.datys.cu/content/repositories/central/"}
+        mavenCentral()
+        jcenter()
+        google()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
