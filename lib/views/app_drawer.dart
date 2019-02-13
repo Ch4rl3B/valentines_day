@@ -29,7 +29,7 @@ class AppDrawer extends StatelessWidget {
             child: ListView.builder(
               itemBuilder: (BuildContext context, int position) {
                 Content content = contentList[position];
-                if(position == 0) {
+                if (position == 0) {
                   return ListTile(
                     leading: Icon(
                       Icons.home,
@@ -42,17 +42,21 @@ class AppDrawer extends StatelessWidget {
                     trailing: Icon(
                       Icons.expand_more,
                     ),
-                    onTap: (){
+                    onTap: () {
                       onSelectContent(contentList[0]);
                     },
                   );
                 }
-                if(position == 1){
+                if (position == 1) {
                   return Container(
                     color: Colors.black26,
                     child: ListTile(
-                      leading: Icon(
-                        Icons.date_range, size: 18.0,
+                      leading: Text(
+                        "I",
+                        style: contentTextStyle.copyWith(
+                            color: Colors.black,
+                            fontFamily: "Love Icon",
+                            fontSize: 24),
                       ),
                       title: Text(
                         "De Amigos",
@@ -61,11 +65,14 @@ class AppDrawer extends StatelessWidget {
                     ),
                   );
                 }
-                if( (position > 1 && position < 8) || (position > 8 && position < 19) || (position > 19)){
+                if ((position > 1 && position < 8) || position > 8) {
                   return ListTile(
-                    leading: Icon(
-                      content.icon, size: 18.0,
-                      color: Colors.black54,
+                    leading: Text(
+                      getIcon(content.author),
+                      style: contentTextStyle.copyWith(
+                          color: Colors.black,
+                          fontFamily: "Love Icon",
+                          fontSize: 20),
                     ),
                     title: Text(
                       content.title,
@@ -74,43 +81,31 @@ class AppDrawer extends StatelessWidget {
                     trailing: Icon(
                       Icons.expand_more,
                     ),
-                    onTap: (){
+                    onTap: () {
                       onSelectContent(content);
+                      Navigator.of(context).pop();
                     },
                   );
                 }
 
-                if(position == 8){
+                if (position == 8) {
                   return Container(
                     color: Colors.black26,
                     child: ListTile(
-                      leading: Icon(
-                        Icons.date_range, size: 18.0,
+                      leading: Text(
+                        "K",
+                        style: contentTextStyle.copyWith(
+                            color: Colors.black,
+                            fontFamily: "Love Icon",
+                            fontSize: 24),
                       ),
                       title: Text(
-                        "De Yeni...",
+                        "De pareja...",
                         style: contentTitleStyle.copyWith(color: Colors.black),
                       ),
                     ),
                   );
                 }
-
-                if(position == 19){
-                  return Container(
-                    color: Colors.black26,
-                    child: ListTile(
-                      leading: Icon(
-                        Icons.date_range, size: 18.0,
-                      ),
-                      title: Text(
-                        "De Erne...",
-                        style: contentTitleStyle.copyWith(color: Colors.black),
-                      ),
-                    ),
-                  );
-                }
-
-
               },
               itemCount: contentList.length,
               padding: EdgeInsets.only(top: 2.0, bottom: 2.0),
@@ -119,5 +114,16 @@ class AppDrawer extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+String getIcon(Author author) {
+  switch (author) {
+    case Author.ernesto:
+      return "L";
+    case Author.yeni:
+      return "E";
+    case Author.otro:
+      return "V";
   }
 }

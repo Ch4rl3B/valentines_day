@@ -42,6 +42,12 @@ flutter:
     - family: icomoon
       fonts:
         - asset: fonts/icomoon.ttf
+    - family: Sketch Gothic School
+      fonts:
+        - asset: fonts/gothic.ttf
+    - family: Love Icon
+      fonts:
+        - asset: fonts/icons.otf
 
   assets:
     - images/drawer_image.jpg
@@ -64,6 +70,9 @@ flutter:
     - images/photos/FUM-6.jpg
     - images/photos/GUM007.jpg
     - images/photos/MANOS.jpg
+    - images/photos/PIES.jpg
+    - images/photos/NALGA.jpg
+    - images/photos/GUSTAS.jpg
 
 
   # To add assets to your application, add an assets section, like this:

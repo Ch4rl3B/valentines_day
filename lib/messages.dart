@@ -9,7 +9,7 @@ List<String> messages = <String>[
   "Pasando portrait y filtros...",
   "Adelgazando a Yeni...",
   "Afeando a Ernesto...",
-  "Aplicando sensuras..."
+  "Aplicando censuras...",
   "Demorándome porque sí...",
   "Espera un poco más...",
   "Estoy almorzando vuelvo enseguida...",

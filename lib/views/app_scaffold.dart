@@ -13,7 +13,7 @@ class AppScaffold extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text("Nuestro amor por siempre"),
+        title: Text("Y&E: Textos de amor"),
       ),
       body: Container(
           child: Stack(

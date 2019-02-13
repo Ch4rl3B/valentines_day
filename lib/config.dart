@@ -18,5 +18,5 @@ var appTheme = ThemeData(
 );
 
 
-TextStyle contentTitleStyle = appTheme.primaryTextTheme.headline;
+TextStyle contentTitleStyle = appTheme.primaryTextTheme.headline.copyWith(fontSize: 16.0);
 TextStyle contentTextStyle = appTheme.primaryTextTheme.body1;

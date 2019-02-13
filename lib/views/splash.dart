@@ -36,27 +36,33 @@ class SplashScreen extends StatelessWidget {
 
     return Material(
       color: Colors.black,
-      child: StreamBuilder(
-          stream: _subject.stream,
-          builder: (context, snapshot) {
-            return new Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                  child: DecoratedBox(decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('images/b.png'), fit: BoxFit.contain),
-                          shape: BoxShape.circle,
-                  )
-                  ),
-                  width: 200.0,
-                  height: 200.0,
-                ),
-                Text(snapshot.data, style: TextStyle(color: Colors.amber, fontWeight: FontWeight.bold, fontSize: 20.0),)
-              ],
-            );
-          }
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text("Yeni & Erne \n Textos de amor", style: TextStyle(color: Colors.amber, fontSize: 62.0, fontFamily: 'Sketch Gothic School'), textAlign: TextAlign.center,),
+          Container(
+            child: DecoratedBox(decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('images/b.png'), fit: BoxFit.contain),
+              shape: BoxShape.circle,
+            )
+            ),
+            width: 200.0,
+            height: 200.0,
+          ),
+          StreamBuilder(
+              stream: _subject.stream,
+              builder: (context, snapshot) {
+                return new Text(snapshot.data, style: TextStyle(color: Colors.amber, fontWeight: FontWeight.bold, fontSize: 20.0), textAlign: TextAlign.center,);
+              }
+          ),
+          Container(
+              width: 25,
+              height: 25,
+              margin: EdgeInsets.only(top: 12),
+              child: CircularProgressIndicator(backgroundColor: Colors.amber,))
+        ],
       ),
     );
   }
