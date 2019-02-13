@@ -59,20 +59,26 @@ flutter:
     - images/photos/ANTES003.jpg
     - images/photos/ANTES004.jpg
     - images/photos/CERRADO001.jpg
-    - images/photos/FUM002.jpg
     - images/photos/FUM003.jpg
     - images/photos/FUM004.jpg
-    - images/photos/FUM005.jpg
-    - images/photos/FUM006.jpg
-    - images/photos/FUM-3.jpg
     - images/photos/FUM-4.jpg
     - images/photos/FUM-5.jpg
     - images/photos/FUM-6.jpg
-    - images/photos/GUM007.jpg
     - images/photos/MANOS.jpg
     - images/photos/PIES.jpg
     - images/photos/NALGA.jpg
     - images/photos/GUSTAS.jpg
+    - images/photos/IMA001.jpg
+    - images/photos/IMA002.JPG
+    - images/photos/IMA003.jpg
+    - images/photos/IMA004.jpg
+    - images/photos/IMA005.JPG
+    - images/photos/IMA006.JPG
+    - images/photos/IMA007.JPG
+    - images/photos/IMA008.JPG
+    - images/photos/IMA009.JPG
+    - images/photos/IMA010.JPG
+    - images/photos/IMA011.JPG
 
 
   # To add assets to your application, add an assets section, like this:

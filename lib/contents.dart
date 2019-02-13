@@ -74,7 +74,7 @@ Y tú que eres la dueña, de todas las canciones.
 ¿Cómo es posible entonces,
 que me puedas querer?
    """,
-    assetPath: "images/photos/ANTES004.jpg",
+    assetPath: "images/photos/IMA009.JPG",
   ),
   //TODO ANTESSSS...............................
   new Content(), // 1
@@ -104,6 +104,7 @@ Te espero sin equipaje....sin palabras.
 Sin preguntas.....
 Solos......tú y yo.
    """,
+    assetPath: 'images/photos/IMA007.JPG'
   ),
   new Content(
       title: "Stalker",
@@ -181,10 +182,10 @@ Saludos y linda noche
  """,
       icon: Icons.message,
       assetPath: 'images/photos/ANTES003.jpg'),
+  new Content(),
   new Content(
       title: "7 de Mayo",
       author: Author.yeni,
-      icon: const IconData(0xe9006, fontFamily: 'icomoon'),
       text: """
 .....El umbral de la mañana presagia un día 
 eterno,
@@ -225,7 +226,9 @@ Los instantes narran versos...
 Su cuerpo renace en metáforas....
 Comienza una historia..
 "Única en el Mundo"
-"""),
+""",
+    assetPath: 'images/photos/IMA002.JPG'
+  ),
   new Content(title: "Volvernos a encontrar", author: Author.yeni, text: """
 De mi....
 No esperes más que mi mundo transparente…
@@ -252,7 +255,9 @@ Y así abrir todas las puertas que encontremos en el camino...
 Espero que esta Vida nos sea tan extraordinaria....
 Que queramos en la otra Vida...
 Volvernos a encontrar
-"""),
+""",
+  assetPath: 'images/photos/IMA008.JPG'
+  ),
   new Content(
       title: "Para ti mi amor 1",
       author: Author.yeni,
@@ -289,7 +294,7 @@ y puse rostro al verso de una sonrisa...
       text: """
 Decir Te Amo me resulta insuficiente, resumo lo que eres a sólo mis sentimientos…Pero Eres mucho más de cuánto puedo abarcar…Eres luz, gracia, armonía...despliegue de emociones como acordes componiendo la melodía perfecta de lo que; en mi criterio; debiera ser cada persona que ame la Vida...
 """,
-      assetPath: 'images/photos/FUM001.jpg'),
+      assetPath: 'images/photos/IMA005.JPG'),
   new Content(
     title: "Ven conmigo amor",
     author: Author.ernesto,
@@ -299,6 +304,7 @@ Ven conmigo, amor, descubramos lo que hay detrás de las sombras de nuestros ojo
 Ven conmigo, amor, y te prometo desde hoy y para siempre, que nunca más habrá monstruos bajo tu cama, que nunca más habrá lagrimas sobre tus mejillas, que nunca más habrá soledad dentro de tu corazón…que nunca más habrá más que amor, rodeándote… y lo veras en la sonrisa de tus niños, y lo veras en los gestos de tus fotografías, y lo sentirás en las caricias con las que te despertaré cada mañana.
 Ven conmigo, amor…pero ven ya, antes de que se apague la luz, antes de que cierre los ojos… ven ya que aquí te espero, sincero, desnudo…te espero.
 """,
+    assetPath: 'images/photos/IMA010.JPG'
   ),
   new Content(
       title: "Para ti mi amor 4",
@@ -307,7 +313,7 @@ Ven conmigo, amor…pero ven ya, antes de que se apague la luz, antes de que cie
 A veces me vuelvo redundante, monotemática...hago pausa oxigenante sobre algún motivo que de repente me inspira....Más allá de luces y sombras, de formas y matices, narro un mundo que solo yo conozco...fibras subjetivas que hilvanan fotografías, cuando; con ojos del Alma; me observo dentro...
 Allí nace el arte, el verbo, eslabones de un mañana en sueños que valen la pena conquistar...Palabras que solo yo entiendo porque solo a mí me pertenecen...Voz entrecortada... manos temblorosas...Geografía del rostro que gritan mis silencios...
 """,
-      assetPath: 'images/photos/FUM002.jpg'),
+      assetPath: 'images/photos/IMA011.JPG'),
   new Content(
       title: "Para ti mi amor 5",
       author: Author.yeni,
@@ -351,6 +357,7 @@ Termina la batalla. Sobre el campo quedan dos cuerpos muertos y una bandera… l
 
 Ahora todo comienza...de nuevo.
 """,
+    assetPath: 'images/photos/FUM-6.jpg'
   ),
   new Content(
       title: "Sacrificios",
@@ -387,7 +394,9 @@ Mis deseos conjugados....
 Mis acentos, mis paréntesis...
 Mi ternura en puntos suspensivos...
 Mi Pasión sin punto final....
-"""),
+""",
+  assetPath: 'images/photos/IMA003.jpg'
+  ),
   new Content(
       title: "Los pies de una ciudad",
       author: Author.ernesto,
@@ -447,7 +456,9 @@ a esta muerte caliente de tus brazos!...
   new Content(title: "Directo", author: Author.otro, text: """
 Seré directo: Quiero que me busques, que me converses y seas una mujer conmigo. Me gustas. Me encantas. Tu forma de ser. Tu inteligencia. Tu cuerpo. Tus defectos. Tus habilidades. Muchas otras cualidades. Tómalo con calma porque si no vienes por mí entenderé que no había un nosotros y está bien, la vida sigue; pero si estás dudando, decídete porque no siempre voy a estar aquí. Ven. Te quiero aquí conmigo… en mí… a mi lado. Probemos porque nada está dicho. No hay reglas ni manuales. Sólo hay vida, una que ambos podemos compartir.
           -Alex Floyd
-    """),
+    """,
+    assetPath: 'images/photos/IMA001.jpg'
+  ),
   new Content(
       title: "Me gustas",
       author: Author.otro,
@@ -468,7 +479,7 @@ BehaviorSubject<Content> contentsSubject =
 
 int passInvalid(int pos, int add) {
   pos = pos + add;
-  if (pos == 19 || pos == 8 || pos == 1) {
+  if (pos == 8 || pos == 1) {
     return pos + (1 * add);
   } else {
     return pos;

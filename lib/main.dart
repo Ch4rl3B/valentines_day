@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       title: 'Yeni & Erne',
       theme: appTheme,
       home: MyHomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 
